@@ -101,7 +101,8 @@ build_apk() {
 		-c \
 		-o $output_apk_name \
 		-b $patches_filename \
-		-m $integrations_filename"
+		-m $integrations_filename \
+		-e disable-shorts-button"
     if [ "$1" ] && [ ! "$additional_args" = "" ]; then
         # with $additional_args and required arg
         $base_cmd \
